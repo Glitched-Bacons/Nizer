@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Use Case Diagram" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="ec7b62ae-75cd-4eac-b50c-cbcf7db413ba"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Use Case Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Actor" uid="bc0aeb48-0cad-4bcc-a25b-07512f0eaa96"/>
+        <COMPID name="Hardware" mc="Standard.Actor" uid="77733f25-35de-4bec-82a8-7e470b35cc16"/>
+        <COMPID name="Select Folder" mc="Standard.UseCase" uid="480f28b7-8c78-4dad-9d8d-aeac045b51c3"/>
+        <COMPID name="Select Algorithm" mc="Standard.UseCase" uid="56b63404-eba9-45f0-a89e-e447bd0d9414"/>
+        <COMPID name="Browse Clusters" mc="Standard.UseCase" uid="e8c3996e-56ab-4586-aaed-ae90a91031a0"/>
+        <COMPID name="Display Photo" mc="Standard.UseCase" uid="b4a45589-351e-4d42-98b9-422b79c3a2be"/>
+        <COMPID name="Annotate Photo" mc="Standard.UseCase" uid="4c70aa03-443f-4e8d-9341-5560143d6d43"/>
+        <COMPID name="Load saved layout" mc="Standard.UseCase" uid="4b17e8fa-a33b-4a50-aa5b-55f636906265"/>
+        <COMPID name="Save layout" mc="Standard.UseCase" uid="9a52d614-695e-4b49-8224-03e4acfc5f4a"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Nizer-App" mc="Standard.UseCaseDiagram" uid="c73ea67e-4916-402f-b31b-8de23d347f58"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

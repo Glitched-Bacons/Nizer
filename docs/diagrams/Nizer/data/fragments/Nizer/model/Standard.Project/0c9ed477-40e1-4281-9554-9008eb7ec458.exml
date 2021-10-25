@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer" version="4">
+  <OBJECT>
+    <ID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Nizer]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="nizer" mc="Standard.Package" uid="ec7b62ae-75cd-4eac-b50c-cbcf7db413ba"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Nizer" mc="Infrastructure.DiagramSet" uid="b6ff9984-296e-43fa-a265-d08b8a6de3df"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
