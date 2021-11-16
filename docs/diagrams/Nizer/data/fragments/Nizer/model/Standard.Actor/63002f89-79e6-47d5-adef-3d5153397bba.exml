@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Hardware" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Hardware Memory" version="4">
   <OBJECT>
-    <ID name="Hardware" mc="Standard.Actor" uid="77733f25-35de-4bec-82a8-7e470b35cc16"/>
-    <PID name="nizer" mc="Standard.Package" uid="ec7b62ae-75cd-4eac-b50c-cbcf7db413ba"/>
+    <ID name="Hardware Memory" mc="Standard.Actor" uid="63002f89-79e6-47d5-adef-3d5153397bba"/>
+    <PID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="2e6eb945-0b0f-4cc2-a960-765ed5489cce"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Hardware]]></ATT>
+      <ATT name="Name"><![CDATA[Hardware Memory]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

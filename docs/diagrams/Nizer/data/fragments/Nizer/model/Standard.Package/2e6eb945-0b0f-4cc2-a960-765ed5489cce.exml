@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Use Case Diagram" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="2e6eb945-0b0f-4cc2-a960-765ed5489cce"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Use Case Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Actor" uid="70ec4dbe-517b-4dcf-bc40-5d0e43e0c446"/>
+        <COMPID name="Hardware Memory" mc="Standard.Actor" uid="63002f89-79e6-47d5-adef-3d5153397bba"/>
+        <COMPID name="View data" mc="Standard.UseCase" uid="33ab462e-9806-4205-9a18-3c7c33cc89e7"/>
+        <COMPID name="Display Photo" mc="Standard.UseCase" uid="c6798007-612f-4a9d-8f9f-43ecb6c1aa89"/>
+        <COMPID name="Annotate Photo" mc="Standard.UseCase" uid="8798e830-932d-4d92-a780-a6339387711e"/>
+        <COMPID name="Save layout of grouped data" mc="Standard.UseCase" uid="044257a3-5eef-40cd-9cb2-ba7655b06555"/>
+        <COMPID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="bead0023-fc20-41c4-9f50-18f3c3aa337f"/>
+        <COMPID name="Group data" mc="Standard.UseCase" uid="5e7bc291-a85c-46b5-8972-eaaa3b33b466"/>
+        <COMPID name="Change the grouping method" mc="Standard.UseCase" uid="067ff758-5428-4524-87ae-d8befdd70473"/>
+        <COMPID name="Load layout of grouped data" mc="Standard.UseCase" uid="37db78b5-5f9e-41d6-a8cf-7be34c93bd37"/>
+        <COMPID name="Select data" mc="Standard.UseCase" uid="9107cfc4-a3ea-40c5-907b-f41d7b0c56d1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Nizer-App" mc="Standard.UseCaseDiagram" uid="7806bf16-4492-433e-8c61-f603a4666987"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

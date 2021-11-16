@@ -10,7 +10,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Model">
-        <COMPID name="nizer" mc="Standard.Package" uid="ec7b62ae-75cd-4eac-b50c-cbcf7db413ba"/>
+        <COMPID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="2e6eb945-0b0f-4cc2-a960-765ed5489cce"/>
       </COMP>
       <COMP relation="DiagramRoot">
         <COMPID name="Nizer" mc="Infrastructure.DiagramSet" uid="b6ff9984-296e-43fa-a265-d08b8a6de3df"/>
