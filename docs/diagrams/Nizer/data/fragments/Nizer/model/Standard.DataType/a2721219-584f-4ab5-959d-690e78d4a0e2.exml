@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="std::vector&lt;Tile&gt;" version="4">
+  <OBJECT>
+    <ID name="std::vector&lt;Tile&gt;" mc="Standard.DataType" uid="a2721219-584f-4ab5-959d-690e78d4a0e2"/>
+    <PID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[std::vector<Tile>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

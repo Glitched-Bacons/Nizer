@@ -20,7 +20,6 @@
         <COMPID name="Display Photo" mc="Standard.UseCase" uid="c6798007-612f-4a9d-8f9f-43ecb6c1aa89"/>
         <COMPID name="Annotate Photo" mc="Standard.UseCase" uid="8798e830-932d-4d92-a780-a6339387711e"/>
         <COMPID name="Save layout of grouped data" mc="Standard.UseCase" uid="044257a3-5eef-40cd-9cb2-ba7655b06555"/>
-        <COMPID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="bead0023-fc20-41c4-9f50-18f3c3aa337f"/>
         <COMPID name="Group data" mc="Standard.UseCase" uid="5e7bc291-a85c-46b5-8972-eaaa3b33b466"/>
         <COMPID name="Change the grouping method" mc="Standard.UseCase" uid="067ff758-5428-4524-87ae-d8befdd70473"/>
         <COMPID name="Load layout of grouped data" mc="Standard.UseCase" uid="37db78b5-5f9e-41d6-a8cf-7be34c93bd37"/>

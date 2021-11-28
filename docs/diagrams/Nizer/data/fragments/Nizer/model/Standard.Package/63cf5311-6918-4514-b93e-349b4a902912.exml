@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Class Diagram (without factory)" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Class Diagram (without factory)]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClusterTile" mc="Standard.Class" uid="90e7611c-d84a-47ac-81e1-244203f3d4a5"/>
+        <COMPID name="WelcomeView" mc="Standard.Class" uid="9a79c28a-8c02-4eb6-985d-e83341c90d19"/>
+        <COMPID name="AlgorithmSelectionView" mc="Standard.Class" uid="96ef89cd-b6e0-41e4-a8ae-a048f2eb837d"/>
+        <COMPID name="HomepageView" mc="Standard.Class" uid="1251e526-b56d-467a-826a-570a5a12fbb1"/>
+        <COMPID name="ImageView" mc="Standard.Class" uid="c34d692c-af51-4163-be6d-3210cea7ae34"/>
+        <COMPID name="ImageTile" mc="Standard.Class" uid="48b34570-753d-468a-840f-ad1f3112d11a"/>
+        <COMPID name="QImage" mc="Standard.DataType" uid="67243d8a-9c87-45ef-b005-80fe5c1a6e87"/>
+        <COMPID name="PHash" mc="Standard.Class" uid="b74e8c56-df79-4876-a0d0-41369642dda7"/>
+        <COMPID name="DHash" mc="Standard.Class" uid="35b48258-a59f-4d90-abf4-70cedee8ef28"/>
+        <COMPID name="AHash" mc="Standard.Class" uid="3828c806-a7d6-4e34-a9d2-3b668d1deb68"/>
+        <COMPID name="HashAlgorithm" mc="Standard.Interface" uid="e0306604-2824-4d74-8200-19c11f27e1b2"/>
+        <COMPID name="Tile" mc="Standard.Interface" uid="8c6d7ae4-0f7b-4539-bbfc-df9f29f1fe6d"/>
+        <COMPID name="std::vector&lt;Tile&gt;" mc="Standard.DataType" uid="a2721219-584f-4ab5-959d-690e78d4a0e2"/>
+        <COMPID name="std::shared_ptr&lt;HashAlgorithm&gt;" mc="Standard.DataType" uid="23afcba7-a336-4560-8383-73c4d792aee4"/>
+        <COMPID name="MainWindow" mc="Standard.Class" uid="c5f46226-3b92-45fc-9452-07281ea911fe"/>
+        <COMPID name="QStackedWidget" mc="Standard.DataType" uid="b85dcf12-9713-4a06-9fc9-7cb0c894ede1"/>
+        <COMPID name="View" mc="Standard.Interface" uid="c0b18029-9658-4a37-a572-3bca025b5b1e"/>
+        <COMPID name="ViewStack" mc="Standard.Class" uid="1fbcfff9-610e-4bc9-9879-2f1f0e2a8ef0"/>
+        <COMPID name="std::map&lt;ViewId, std::function&lt;std::unique_ptr&lt;View&gt;&gt;&gt;" mc="Standard.DataType" uid="4f6b9135-3890-4c6b-9c9d-20ada417fd0b"/>
+        <COMPID name="std::unique_ptr&lt;View&gt;" mc="Standard.DataType" uid="30c15395-a9c7-4ea5-a592-2cf511c5d52b"/>
+        <OBJECT>
+          <ID name="Operation" mc="Standard.Enumeration" uid="302f766c-e7cb-4fab-b95d-d23e2f9d796e"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Operation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Pop" mc="Standard.EnumerationLiteral" uid="a3494668-cc4f-4b8b-a834-973253a94f95"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Pop]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Push" mc="Standard.EnumerationLiteral" uid="3295f575-5cfc-4c1d-bac9-ea6d260d1d5b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Push]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Clear" mc="Standard.EnumerationLiteral" uid="a0a2a5e5-656c-4136-8573-32e367b731a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Clear]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="std::vector&lt;Change&gt;" mc="Standard.DataType" uid="15f70af4-263f-4d1e-9f07-8f04f738d284"/>
+        <COMPID name="std::vector&lt;std::unique_ptr&lt;View&gt;&gt;" mc="Standard.DataType" uid="7c023912-0451-496f-a8d4-7be5b7d3b5f2"/>
+        <COMPID name="QWidget" mc="Standard.Package" uid="cce2c1a9-6eb3-481f-b154-a59e31a47512"/>
+        <COMPID name="QFrame" mc="Standard.Package" uid="a140bcc5-0fe9-46c5-a538-541c79491eb1"/>
+        <COMPID name="Qt" mc="Standard.Package" uid="2fb34e93-0d2b-4dfe-a6c6-6d0a760def10"/>
+        <COMPID name="Qt" mc="Standard.Package" uid="3bb47077-4cba-4da7-8e58-b50675608396"/>
+        <COMPID name="Qt" mc="Standard.Package" uid="d0be4726-08cf-46ff-8a70-d289118631c5"/>
+        <COMPID name="Hash" mc="Standard.Class" uid="171bf317-c76e-4bfd-8bcd-0ef2ceeab89c"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Nizer App - Class Diagram Class diagram" mc="Standard.ClassDiagram" uid="b485466a-e0dd-400b-8fed-4eb2e674f9cb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

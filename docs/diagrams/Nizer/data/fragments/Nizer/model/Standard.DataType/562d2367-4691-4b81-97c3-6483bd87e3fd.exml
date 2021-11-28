@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="std::shared_ptr&lt;HashAlgorithm&gt;" version="4">
+  <OBJECT>
+    <ID name="std::shared_ptr&lt;HashAlgorithm&gt;" mc="Standard.DataType" uid="562d2367-4691-4b81-97c3-6483bd87e3fd"/>
+    <PID name="Nizer App - Class Diagram" mc="Standard.Package" uid="96cd795d-4ef5-4cc5-93a7-64d28391db01"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[std::shared_ptr<HashAlgorithm>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
