@@ -19,6 +19,40 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
+        # Views
+        View/ViewStack.cpp
+        View/ViewStack.h
+        View/View.h
+        View/View.cpp
+        View/AlgorithmSelectionView.h
+        View/AlgorithmSelectionView.cpp
+        View/WelcomeView.h
+        View/WelcomeView.cpp
+        View/HomepageView.h
+        View/HomepageView.cpp
+        View/ImageView.h
+        View/ImageView.cpp
+
+        # Hash algorithm
+        HashAlgorithm/HashAlgorithm.h
+        HashAlgorithm/HashAlgorithm.cpp
+        HashAlgorithm/PHash.h
+        HashAlgorithm/PHash.cpp
+        HashAlgorithm/DHash.h
+        HashAlgorithm/DHash.cpp
+        HashAlgorithm/AHash.h
+        HashAlgorithm/AHash.cpp
+        HashAlgorithm/Hash.h
+        HashAlgorithm/Hash.cpp
+
+        # Tiles
+        Tile/Tile.h
+        Tile/Tile.cpp
+        Tile/ClusterTile.h
+        Tile/ClusterTile.cpp
+        Tile/ImageTile.h
+        Tile/ImageTile.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
