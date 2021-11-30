@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Component Diagram" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Component Diagram" mc="Standard.Package" uid="8a11ceed-41cc-49ab-8363-c998983e36a2"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Component Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="View" mc="Standard.Component" uid="35519e07-8fda-46d2-a207-864e8276bf7c"/>
+        <COMPID name="ViewStack" mc="Standard.Component" uid="31fe086f-889c-4210-ac5a-11e7a6cf1e0e"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Component Diagram" mc="Standard.ClassDiagram" uid="3d0e36d9-00b0-499e-b7e8-1b07f1e067f2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

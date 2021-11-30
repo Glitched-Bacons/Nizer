@@ -102,7 +102,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="operationsQueue" mc="Standard.Attribute" uid="ec4e68e6-f6db-4317-b325-52014806ff90"/>
+          <ID name="mOperationsQueue" mc="Standard.Attribute" uid="ec4e68e6-f6db-4317-b325-52014806ff90"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -116,7 +116,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[operationsQueue]]></ATT>
+            <ATT name="Name"><![CDATA[mOperationsQueue]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -126,7 +126,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="stack" mc="Standard.Attribute" uid="21d13db7-4bfe-4b0f-ba82-758604c07311"/>
+          <ID name="mStack" mc="Standard.Attribute" uid="21d13db7-4bfe-4b0f-ba82-758604c07311"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -140,7 +140,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[stack]]></ATT>
+            <ATT name="Name"><![CDATA[mStack]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -150,7 +150,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="pages" mc="Standard.Attribute" uid="f389de7e-d6af-4848-9ef1-3f897d88b5bf"/>
+          <ID name="mPages" mc="Standard.Attribute" uid="f389de7e-d6af-4848-9ef1-3f897d88b5bf"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -164,7 +164,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[pages]]></ATT>
+            <ATT name="Name"><![CDATA[mPages]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>

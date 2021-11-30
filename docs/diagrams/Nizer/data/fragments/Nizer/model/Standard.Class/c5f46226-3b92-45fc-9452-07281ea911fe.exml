@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="viewStack" mc="Standard.Attribute" uid="d9c574be-019b-4ed1-818f-b7937e2e6fbc"/>
+          <ID name="mViewStack" mc="Standard.Attribute" uid="d9c574be-019b-4ed1-818f-b7937e2e6fbc"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -31,7 +31,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[viewStack]]></ATT>
+            <ATT name="Name"><![CDATA[mViewStack]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>

@@ -145,7 +145,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="hash" mc="Standard.Attribute" uid="0ed2983a-a09a-4164-a8b7-a8329dafe8a7"/>
+          <ID name="mHash" mc="Standard.Attribute" uid="0ed2983a-a09a-4164-a8b7-a8329dafe8a7"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -159,7 +159,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[hash]]></ATT>
+            <ATT name="Name"><![CDATA[mHash]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>

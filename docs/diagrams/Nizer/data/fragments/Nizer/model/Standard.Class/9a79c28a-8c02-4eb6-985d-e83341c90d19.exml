@@ -171,7 +171,7 @@ requestPush<AlgorithmSelectionView>(...);]]></ATT>
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="hashAlgorithm" mc="Standard.Attribute" uid="89572183-ac86-4379-83c6-ecdff77a3eae"/>
+          <ID name="mHashAlgorithm" mc="Standard.Attribute" uid="89572183-ac86-4379-83c6-ecdff77a3eae"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -185,12 +185,12 @@ requestPush<AlgorithmSelectionView>(...);]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[hashAlgorithm]]></ATT>
+            <ATT name="Name"><![CDATA[mHashAlgorithm]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="HashAlgorithm" mc="Standard.Interface" uid="e0306604-2824-4d74-8200-19c11f27e1b2"/>
+              <ID name="std::unique_ptr&lt;HashAlgorithm&gt;" mc="Standard.DataType" uid="57e136f7-9440-4bc6-80d2-8934d3de3b69"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

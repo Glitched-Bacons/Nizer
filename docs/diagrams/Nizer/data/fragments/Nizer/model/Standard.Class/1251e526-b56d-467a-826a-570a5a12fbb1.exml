@@ -100,7 +100,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="tiles" mc="Standard.Attribute" uid="796d4f8d-089d-47dc-8f18-2733aa1b08dc"/>
+          <ID name="mTiles" mc="Standard.Attribute" uid="796d4f8d-089d-47dc-8f18-2733aa1b08dc"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -114,7 +114,7 @@
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[tiles]]></ATT>
+            <ATT name="Name"><![CDATA[mTiles]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
