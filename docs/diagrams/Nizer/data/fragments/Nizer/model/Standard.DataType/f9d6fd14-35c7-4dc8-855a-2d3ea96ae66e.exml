@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="QStackedWidget" version="4">
+  <OBJECT>
+    <ID name="QStackedWidget" mc="Standard.DataType" uid="f9d6fd14-35c7-4dc8-855a-2d3ea96ae66e"/>
+    <PID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="2d65ebf8-9a64-462d-8737-f2e355d38e96"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[QStackedWidget]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

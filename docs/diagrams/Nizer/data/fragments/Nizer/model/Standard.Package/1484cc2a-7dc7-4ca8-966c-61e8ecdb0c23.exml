@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Qt" version="4">
+  <OBJECT>
+    <ID name="Qt" mc="Standard.Package" uid="1484cc2a-7dc7-4ca8-966c-61e8ecdb0c23"/>
+    <PID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="ff72a49b-dc7f-4f28-a579-1b46dad25b59"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Qt]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="QImage" mc="Standard.Class" uid="69b0e14e-455b-4614-a04f-a8facfe4bf15"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

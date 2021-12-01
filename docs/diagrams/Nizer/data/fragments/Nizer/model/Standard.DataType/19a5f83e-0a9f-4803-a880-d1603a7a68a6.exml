@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="std::unique_ptr&lt;View&gt;" version="4">
+  <OBJECT>
+    <ID name="std::unique_ptr&lt;View&gt;" mc="Standard.DataType" uid="19a5f83e-0a9f-4803-a880-d1603a7a68a6"/>
+    <PID name="Nizer App - Views" mc="Standard.Package" uid="df01a88f-424b-4abb-8b20-a521e1fbfbb1"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[std::unique_ptr<View>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

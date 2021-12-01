@@ -11,9 +11,8 @@
     <DEPENDENCIES>
       <COMP relation="Model">
         <COMPID name="Nizer App - Use Case Diagram" mc="Standard.Package" uid="2e6eb945-0b0f-4cc2-a960-765ed5489cce"/>
-        <COMPID name="Nizer App - Class Diagram Depracated (with factory)" mc="Standard.Package" uid="96cd795d-4ef5-4cc5-93a7-64d28391db01"/>
-        <COMPID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
         <COMPID name="Nizer App - Component Diagram" mc="Standard.Package" uid="8a11ceed-41cc-49ab-8363-c998983e36a2"/>
+        <COMPID name="Nizer App - Class Diagram" mc="Standard.Package" uid="fed67d59-b184-4069-9456-219273d59399"/>
       </COMP>
       <COMP relation="DiagramRoot">
         <COMPID name="Nizer" mc="Infrastructure.DiagramSet" uid="b6ff9984-296e-43fa-a265-d08b8a6de3df"/>

@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Class Diagram (without factory)" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Class Diagram" version="4">
   <OBJECT>
-    <ID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
-    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ID name="Nizer App - Class Diagram" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
+    <PID name="Nizer App - Class Diagram" mc="Standard.Package" uid="fed67d59-b184-4069-9456-219273d59399"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Nizer App - Class Diagram (without factory)]]></ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Class Diagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -84,6 +84,7 @@
         <COMPID name="Hash" mc="Standard.Class" uid="171bf317-c76e-4bfd-8bcd-0ef2ceeab89c"/>
         <COMPID name="std::unique_ptr&lt;HashAlgorithm&gt;" mc="Standard.DataType" uid="57e136f7-9440-4bc6-80d2-8934d3de3b69"/>
         <COMPID name="std::vector&lt;std::string&gt;" mc="Standard.DataType" uid="1ba26e3e-73ac-4875-b05d-5a6e6928ed3f"/>
+        <COMPID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="a2acd6a4-4b96-40c1-8ab1-09526e214cd9"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Nizer App - Class Diagram Class diagram" mc="Standard.ClassDiagram" uid="b485466a-e0dd-400b-8fed-4eb2e674f9cb"/>
