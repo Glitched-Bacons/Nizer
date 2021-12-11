@@ -29,6 +29,7 @@ set(PROJECT_SOURCES
         View/AlgorithmSelectionView.cpp
         View/WelcomeView.h
         View/WelcomeView.cpp
+        View/WelcomeViewUI.ui
         View/HomepageView.h
         View/HomepageView.cpp
         View/ImageView.h
