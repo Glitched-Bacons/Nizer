@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ImageView" version="4">
   <OBJECT>
     <ID name="ImageView" mc="Standard.Class" uid="c34d692c-af51-4163-be6d-3210cea7ae34"/>
-    <PID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
+    <PID name="Nizer App - Class Diagram" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -26,6 +26,20 @@
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
             <ATT name="Name"><![CDATA[annotate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="goBack" mc="Standard.Operation" uid="90ee8725-3441-4bd9-b697-8d9d81d9629c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[goBack]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Sequence Diagram" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Sequence Diagram" mc="Standard.Package" uid="0c20611f-b25e-4c06-8e64-ac97ec0f8175"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Sequence Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Startup of application" mc="Standard.Interaction" uid="46159cd5-d1cf-4eab-be96-12fd1bfc1b53"/>
+        <COMPID name="Selecting new algorithm" mc="Standard.Interaction" uid="7ec2a7e0-d824-4956-bc9e-832181f557cf"/>
+        <COMPID name="Data grouping" mc="Standard.Interaction" uid="ecb88b25-c6aa-4e28-ac09-9a7743cd3c71"/>
+        <COMPID name="Image display" mc="Standard.Interaction" uid="83f75861-5be2-42fe-a9e4-06cc4347388c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

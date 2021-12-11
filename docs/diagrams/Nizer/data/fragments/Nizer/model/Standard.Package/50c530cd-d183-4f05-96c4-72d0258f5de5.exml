@@ -84,7 +84,6 @@
         <COMPID name="Hash" mc="Standard.Class" uid="e68035b7-2189-41bc-bef6-1ef740ef9723"/>
         <COMPID name="std::unique_ptr&lt;HashAlgorithm&gt;" mc="Standard.DataType" uid="ef1df1f1-6cbd-4104-80fc-895c09b24e28"/>
         <COMPID name="std::vector&lt;std::string&gt;" mc="Standard.DataType" uid="6266ffe0-a848-405c-9191-b892f7342fad"/>
-        <COMPID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="ff72a49b-dc7f-4f28-a579-1b46dad25b59"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Nizer App - Class Diagram Class diagram" mc="Standard.ClassDiagram" uid="e944398b-2c82-422d-9c3f-18fd5eb17eb8"/>

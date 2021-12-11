@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="WelcomeView" version="4">
   <OBJECT>
     <ID name="WelcomeView" mc="Standard.Class" uid="9a79c28a-8c02-4eb6-985d-e83341c90d19"/>
-    <PID name="Nizer App - Class Diagram (without factory)" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
+    <PID name="Nizer App - Class Diagram" mc="Standard.Package" uid="63cf5311-6918-4514-b93e-349b4a902912"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
