@@ -1,7 +1,7 @@
 #include <mainwindow.h>
 #include "ViewStack.h"
 #include "View.h"
-#include "ui_MainWindow.h"
+#include "qlayout.h"
 
 ViewStack::ViewStack(MainWindow& window)
     : mWindow(window)
@@ -52,13 +52,26 @@ void ViewStack::applyOperations()
     {
         auto& currentWidget = mStack.back();
         mStackWidget.setCurrentWidget(currentWidget.get());
-        mWindow.resize(currentWidget->size());
+        mWindow.resize(currentWidget->sizeHint());
     }
 }
 
 void ViewStack::adjustSize()
 {
-    // Nothing yet
+    //mWindow.adjustSize();
+}
+
+void ViewStack::setWindowSize(QSize fixedSize)
+{
+    mWindow.setFixedSize(fixedSize);
+    mWindow.layout()->setSizeConstraint(QLayout::SetFixedSize);
+}
+
+void ViewStack::setWindowSize(QSize minimumResizableSize, QSize maximumResizableSize)
+{
+    mWindow.setMaximumSize(maximumResizableSize);
+    mWindow.setMinimumSize(minimumResizableSize);
+    mWindow.layout()->setSizeConstraint(QLayout::SetDefaultConstraint);
 }
 
 

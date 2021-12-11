@@ -1,4 +1,5 @@
 #include "WelcomeView.h"
+#include "HomepageView.h"
 
 std::vector<Tile> WelcomeView::loadFromFile()
 {
@@ -26,6 +27,8 @@ WelcomeView::WelcomeView(ViewStack& viewStack)
     , ui(std::make_unique<Ui::WelcomeView>())
 {
     ui->setupUi(this);
+    viewStack.setWindowSize(sizeHint());
+
     ui->button_select_algorithm->setHidden(true);
 
     connect(ui->button_threedots, &QPushButton::clicked, this, [this](){
@@ -34,7 +37,7 @@ WelcomeView::WelcomeView(ViewStack& viewStack)
     });
 
     connect(ui->button_select_folder, &QPushButton::clicked, this, [this](){
-        requestPush<WelcomeView>();
+        requestPush<HomepageView>(std::move(std::vector<std::unique_ptr<Tile>>()));
         executeRequests();
     });
 

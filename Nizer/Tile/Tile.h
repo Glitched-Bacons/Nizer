@@ -7,7 +7,7 @@
 class Tile
 {
 public:
-    virtual ~Tile() = 0;
+    virtual ~Tile() = default;
     Tile(const std::string& name);
 
     std::string name() const;

@@ -10,6 +10,12 @@
     <height>320</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>500</width>
@@ -256,7 +262,7 @@
 }</string>
           </property>
           <property name="text">
-           <string>Push</string>
+           <string>Go to homepage</string>
           </property>
          </widget>
          <widget class="QPushButton" name="button_load_saved_data">

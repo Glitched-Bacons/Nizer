@@ -1,6 +1,14 @@
 <RCC>
     <qresource prefix="/icons">
         <file>icons/three-dots.png</file>
+        <file>icons/bacon-icon.png</file>
+        <file>icons/folder-icon.png</file>
+        <file>icons/info-icon.png</file>
+        <file>icons/magnifying-glass-icon.png</file>
+        <file>icons/new-session-icon.png</file>
+        <file>icons/save-icon.png</file>
+        <file>icons/tab-icon.png</file>
+        <file>icons/X-icon.png</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/girl-with-cat.png</file>

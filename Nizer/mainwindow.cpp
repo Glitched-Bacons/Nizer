@@ -5,7 +5,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , mViewStack(*this)
 {
-    setWindowFlag(Qt::MSWindowsFixedSizeDialogHint);
+    //setWindowFlag(Qt::MSWindowsFixedSizeDialogHint);
+    //layout()->setSizeConstraint( QLayout::SetFixedSize );
     mViewStack.push<WelcomeView>();
     mViewStack.applyOperations();
 }

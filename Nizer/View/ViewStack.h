@@ -36,6 +36,9 @@ public:
     void applyOperations();
     void adjustSize();
 
+    void setWindowSize(QSize fixedSize);
+    void setWindowSize(QSize minimumResizableSize, QSize maximumResizableSize);
+
 
 private:
     MainWindow& mWindow;

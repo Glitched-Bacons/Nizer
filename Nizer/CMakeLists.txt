@@ -33,8 +33,9 @@ set(PROJECT_SOURCES
         View/WelcomeView.h
         View/WelcomeView.cpp
         View/WelcomeView.ui
-        #View/HomepageView.h
-        #View/HomepageView.cpp
+        View/HomepageView.h
+        View/HomepageView.cpp
+        View/HomepageView.ui
         #View/ImageView.h
         #View/ImageView.cpp
 
@@ -51,12 +52,14 @@ set(PROJECT_SOURCES
         #HashAlgorithm/Hash.cpp
 
         # Tiles
-        #Tile/Tile.h
-        #Tile/Tile.cpp
-        #Tile/ClusterTile.h
-        #Tile/ClusterTile.cpp
-        #Tile/ImageTile.h
-        #Tile/ImageTile.cpp
+        Tile/Tile.h
+        Tile/Tile.cpp
+        Tile/ClusterTile.h
+        Tile/ClusterTile.cpp
+        Tile/ClusterTile.ui
+        Tile/ImageTile.h
+        Tile/ImageTile.cpp
+        Tile/ImageTile.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
