@@ -31,6 +31,7 @@ set(PROJECT_SOURCES
         View/WelcomeView.cpp
         View/HomepageView.h
         View/HomepageView.cpp
+        View/HomepageViewUI.ui
         View/ImageView.h
         View/ImageView.cpp
 
