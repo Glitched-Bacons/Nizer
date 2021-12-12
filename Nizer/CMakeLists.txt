@@ -4,61 +4,65 @@ project(Nizer VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC OFF)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
+FILE(GLOB_RECURSE UIs *.ui)
+qt_wrap_ui(UI_HEADERS ${UIs})
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
-        mainwindow.ui
+        resources/resources.qrc
 
         # Views
         View/ViewStack.cpp
         View/ViewStack.h
         View/View.h
         View/View.cpp
-        View/AlgorithmSelectionView.h
-        View/AlgorithmSelectionView.cpp
+        #View/AlgorithmSelectionView.h
+        #View/AlgorithmSelectionView.cpp
         View/WelcomeView.h
         View/WelcomeView.cpp
-        View/WelcomeViewUI.ui
-        View/HomepageView.h
-        View/HomepageView.cpp
-        View/ImageView.h
-        View/ImageView.cpp
+        View/WelcomeView.ui
+        #View/HomepageView.h
+        #View/HomepageView.cpp
+        #View/ImageView.h
+        #View/ImageView.cpp
 
         # Hash algorithm
-        HashAlgorithm/HashAlgorithm.h
-        HashAlgorithm/HashAlgorithm.cpp
-        HashAlgorithm/PHash.h
-        HashAlgorithm/PHash.cpp
-        HashAlgorithm/DHash.h
-        HashAlgorithm/DHash.cpp
-        HashAlgorithm/AHash.h
-        HashAlgorithm/AHash.cpp
-        HashAlgorithm/Hash.h
-        HashAlgorithm/Hash.cpp
+        #HashAlgorithm/HashAlgorithm.h
+        #HashAlgorithm/HashAlgorithm.cpp
+        #HashAlgorithm/PHash.h
+        #HashAlgorithm/PHash.cpp
+        #HashAlgorithm/DHash.h
+        #HashAlgorithm/DHash.cpp
+        #HashAlgorithm/AHash.h
+        #HashAlgorithm/AHash.cpp
+        #HashAlgorithm/Hash.h
+        #HashAlgorithm/Hash.cpp
 
         # Tiles
-        Tile/Tile.h
-        Tile/Tile.cpp
-        Tile/ClusterTile.h
-        Tile/ClusterTile.cpp
-        Tile/ImageTile.h
-        Tile/ImageTile.cpp
+        #Tile/Tile.h
+        #Tile/Tile.cpp
+        #Tile/ClusterTile.h
+        #Tile/ClusterTile.cpp
+        #Tile/ImageTile.h
+        #Tile/ImageTile.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Nizer
         MANUAL_FINALIZATION
+        ${UI_HEADERS}
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
@@ -68,12 +72,14 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 else()
     if(ANDROID)
         add_library(Nizer SHARED
+            ${UI_HEADERS}
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(Nizer
+            ${UI_HEADERS}
             ${PROJECT_SOURCES}
         )
     endif()

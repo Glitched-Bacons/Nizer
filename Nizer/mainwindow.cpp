@@ -1,15 +1,16 @@
-#include "MainWindow.h"
-#include "./ui_MainWindow.h"
+#include "mainwindow.h"
+#include <View/WelcomeView.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , mViewStack(*this)
 {
-    ui->setupUi(this);
+    setWindowFlag(Qt::MSWindowsFixedSizeDialogHint);
+    mViewStack.push<WelcomeView>();
+    mViewStack.applyOperations();
 }
 
-MainWindow::~MainWindow()
+void MainWindow::resizeEvent(QResizeEvent *event)
 {
-    delete ui;
+    mViewStack.adjustSize();
 }
-

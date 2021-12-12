@@ -3,16 +3,21 @@
 
 #include "ViewStack.h"
 
-class View
+class View : public QWidget
 {
 public:
-    View(ViewStack& viewStack);
-    virtual ~View() = 0;
+    View(ViewStack& viewStack, QWidget* parent = nullptr);
+    virtual ~View() = default;
 
-    template <class View, typename... Args>
-    void requestPush(Args&&... args);
+    template <class Tview, typename... Args>
+    void requestPush(Args&&... args)
+    {
+        mViewStack.push<Tview>(std::forward<Args>(args)...);
+    }
+
     void requestPop();
     void requestClear();
+    void executeRequests();
 
 private:
     ViewStack& mViewStack;
