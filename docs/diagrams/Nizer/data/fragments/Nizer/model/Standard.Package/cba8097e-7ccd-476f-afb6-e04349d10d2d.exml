@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nizer App - Activity Diagram" version="4">
+  <OBJECT>
+    <ID name="Nizer App - Activity Diagram" mc="Standard.Package" uid="cba8097e-7ccd-476f-afb6-e04349d10d2d"/>
+    <PID name="Nizer" mc="Standard.Project" uid="0c9ed477-40e1-4281-9554-9008eb7ec458"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Nizer App - Activity Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="3bcb1ac4-c1c6-4ee2-aed0-032f34c52d51"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

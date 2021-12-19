@@ -37,7 +37,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="loadFromFolder" mc="Standard.Operation" uid="8f5ec48c-17b1-436f-a434-8b8ccc029ab0"/>
+                      <ID name="open" mc="Standard.Operation" uid="f830e303-f8f2-4db9-a71f-ba3d89d4dbdd"/>
                     </REFOBJ>
                   </LINK>
                   <COMP relation="Descriptor">
@@ -166,13 +166,13 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="requestPush&lt;HomepageView&gt;()" mc="Standard.Message" uid="7044944f-8edd-4dbe-9610-cab5730740b9"/>
+                <ID name="requestPush&lt;ImageView&gt;()" mc="Standard.Message" uid="7044944f-8edd-4dbe-9610-cab5730740b9"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
                   <ATT name="Sequence"><![CDATA[2]]></ATT>
-                  <ATT name="Name"><![CDATA[requestPush<HomepageView>()]]></ATT>
+                  <ATT name="Name"><![CDATA[requestPush<ImageView>()]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -216,13 +216,13 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="push&lt;HomepageView&gt;()" mc="Standard.Message" uid="d0261a1f-ac44-44f8-8a75-6ef9fd36bda1"/>
+                <ID name="push&lt;ImageView&gt;()" mc="Standard.Message" uid="d0261a1f-ac44-44f8-8a75-6ef9fd36bda1"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
                   <ATT name="Sequence"><![CDATA[3]]></ATT>
-                  <ATT name="Name"><![CDATA[push<HomepageView>()]]></ATT>
+                  <ATT name="Name"><![CDATA[push<ImageView>()]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
