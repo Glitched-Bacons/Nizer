@@ -21,6 +21,7 @@ public:
     void saveLayout();
     void displayAboutUs();
     void startNewSession();
+    void exitApplication();
 
 private slots:
     void slideOutPanel();

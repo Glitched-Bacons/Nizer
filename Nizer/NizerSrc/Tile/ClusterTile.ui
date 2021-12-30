@@ -62,7 +62,19 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">
+QFrame
+{
+	color: rgb(255, 255, 255);
+    background-color:rgba(0,0,0,0);
+}
+
+QFrame:hover
+{
+	background-color: rgb(28, 28, 28);
+}
+
+</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -74,18 +86,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="styleSheet">
-         <string notr="true">
-QLabel
-{
-	color: rgb(255, 255, 255);
-}
-
-QLabel:hover
-{
-	
-	background-color: rgb(28, 28, 28);
-}
-</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string/>
@@ -101,18 +102,7 @@ QLabel:hover
       <item>
        <widget class="QLabel" name="clusterName">
         <property name="styleSheet">
-         <string notr="true">
-QLabel
-{
-	color: rgb(255, 255, 255);
-}
-
-QLabel:hover
-{
-	
-	background-color: rgb(28, 28, 28);
-}
-</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>ClusterName</string>

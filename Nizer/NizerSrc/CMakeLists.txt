@@ -35,6 +35,13 @@ set(PROJECT_SOURCES
         View/HomepageView.h
         View/HomepageView.cpp
         View/HomepageView.ui
+        View/Misc/AboutUs.h
+        View/Misc/AboutUs.cpp
+        View/Misc/AboutUs.ui
+        View/Misc/FlowLayout.h
+        View/Misc/FlowLayout.cpp
+        View/Misc/FlowWidget.h
+        View/Misc/FlowWidget.cpp
         #View/ImageView.h
         #View/ImageView.cpp
 

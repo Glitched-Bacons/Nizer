@@ -12,5 +12,7 @@
     </qresource>
     <qresource prefix="/images">
         <file>images/girl-with-cat.png</file>
+        <file>images/bacon.png</file>
+        <file>images/glitched-bacons-logo.png</file>
     </qresource>
 </RCC>

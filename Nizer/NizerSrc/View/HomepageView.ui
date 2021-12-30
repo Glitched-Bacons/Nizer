@@ -519,11 +519,7 @@ QPushButton:hover
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_6">
                <item>
-                <layout class="QGridLayout" name="gridLayout">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                </layout>
+                <widget class="FlowWidget" name="flowWidget" native="true"/>
                </item>
               </layout>
              </widget>
@@ -539,6 +535,14 @@ QPushButton:hover
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FlowWidget</class>
+   <extends>QWidget</extends>
+   <header>View/Misc/FlowWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resources/resources.qrc"/>
  </resources>

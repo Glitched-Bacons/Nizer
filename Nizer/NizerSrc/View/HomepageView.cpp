@@ -1,7 +1,13 @@
 #include "HomepageView.h"
 #include "ViewStack.h"
+#include "WelcomeView.h"
+#include <QFileDialog>
+#include <QGraphicsDropShadowEffect>
 #include <QMessageBox>
 #include <QPropertyAnimation>
+#include "View/Misc/AboutUs.h"
+#include <iostream>
+#include <fstream>
 
 HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<Tile>> tile, QWidget *parent)
     : mTiles(std::move(tile))
@@ -15,25 +21,49 @@ HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<Til
     }
     viewStack.setWindowSize(QSize(0,0), QSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX));
 
+    int counter = 0;
     for(auto& cluster : testClusters)
-        ui->gridLayout->addWidget(cluster.get());
+        ui->flowWidget->addWidget(cluster.get());
 
     connect(ui->Btn_toggle, &QPushButton::clicked, this, &HomepageView::slideOutPanel);
+    connect(ui->Save_Button, &QPushButton::clicked, this, &HomepageView::saveLayout);
+    connect(ui->New_Session_Button, &QPushButton::clicked, this, &HomepageView::startNewSession);
+    connect(ui->About_Us_Button, &QPushButton::clicked, this, &HomepageView::displayAboutUs);
+    connect(ui->Exit_Button, &QPushButton::clicked, this, &HomepageView::exitApplication);
 }
 
 void HomepageView::saveLayout()
 {
-
+    auto fileName = QFileDialog::getSaveFileName(this, "Save your session", QString(), "Nizer Files (*.nizer)");
+    std::ofstream outputFile(fileName.toStdString());
+    outputFile << "To be implemented" << std::endl;
+    outputFile.close();
 }
 
 void HomepageView::displayAboutUs()
 {
-
+    AboutUs dialog(this);
+    dialog.setModal(true);
+    dialog.setWindowFlags(dialog.windowFlags() | Qt::FramelessWindowHint);
+    dialog.window()->setAttribute(Qt::WA_TranslucentBackground);
+    QGraphicsDropShadowEffect* ef = new QGraphicsDropShadowEffect;
+    ef->setColor(QColor(0, 0, 0, 160));
+    ef->setBlurRadius(50);
+    ef->setOffset(0);
+    dialog.setGraphicsEffect(ef);
+    dialog.exec();
 }
 
 void HomepageView::startNewSession()
 {
+    requestPop();
+    requestPush<WelcomeView>();
+    executeRequests();
+}
 
+void HomepageView::exitApplication()
+{
+    QApplication::quit();
 }
 
 void HomepageView::slideOutPanel()
