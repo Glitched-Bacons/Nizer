@@ -3,9 +3,10 @@
 
 #include "View.h"
 
+#include <Tile/ClusterTile.h>
 #include <Tile/Tile.h>
 #include <HashAlgorithm/HashAlgorithm.h>
-#include <MainWindow.h>
+#include <mainwindow.h>
 #include "./ui_WelcomeView.h"
 
 QT_BEGIN_NAMESPACE
@@ -18,8 +19,8 @@ class WelcomeView : public View
 public:
     WelcomeView(ViewStack& viewStack);
 
-    std::vector<Tile> loadFromFile();
-    std::vector<Tile> loadFromFolder();
+    std::vector<std::unique_ptr<ClusterTile>> loadFromFile();
+    std::vector<ClusterTile> loadFromFolder();
 
 private slots:
     void selectAlgorithmClick();
@@ -27,6 +28,7 @@ private slots:
 
 private:
     std::unique_ptr<Ui::WelcomeView> ui;
+    std::vector<std::unique_ptr<ClusterTile>> loadedFiles;
 };
 
 #endif // WELCOMEVIEW_H

@@ -13,6 +13,7 @@ class FlowWidget : public QWidget
 public:
     explicit FlowWidget(QWidget *parent = nullptr);
     void addWidget(QWidget* widget);
+    void clear();
 
 private:
     std::unique_ptr<FlowLayout> flowLayout;

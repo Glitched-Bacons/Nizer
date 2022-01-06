@@ -3,12 +3,9 @@
 const QImage ClusterTile::mThumbnail(":resources/icons/folder-icon.png");
 
 ClusterTile::ClusterTile(const std::string& name, QWidget *parent)
-    : Tile(name)
-    , QWidget(parent)
-    , ui(std::make_unique<Ui::ClusterTile>())
+    : Tile(name, parent)
 {
-    ui->setupUi(this);
-    ui->clusterName->setText(Tile::name().c_str());
+
 }
 
 std::size_t ClusterTile::size() const

@@ -8,23 +8,33 @@
 #include "View/Misc/AboutUs.h"
 #include <iostream>
 #include <fstream>
+#include <Tile/ImageTile.h>
 
-HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<Tile>> tile, QWidget *parent)
-    : mTiles(std::move(tile))
+HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<ClusterTile>> tiles, QWidget *parent)
+    : mClusters(std::move(tiles))
     , View(viewStack, parent)
     , ui(std::make_unique<Ui::HomepageView>())
 {
     ui->setupUi(this);
-    for(int i = 0; i < 10; ++i)
-    {
-        testClusters.emplace_back(std::make_unique<ClusterTile>("name" + std::to_string(i)));
-    }
+    ui->goBackFrame->setVisible(false);
     viewStack.setWindowSize(QSize(0,0), QSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX));
 
-    int counter = 0;
-    for(auto& cluster : testClusters)
-        ui->flowWidget->addWidget(cluster.get());
+    // Just for test purposes
+    for(auto& cluster : mClusters)
+    {
+        cluster->setOnClickFunction([this, &cluster](){
+            mImages.clear();
+            for(const auto& filePath : cluster->filePaths())
+            {
+                std::string filename = filePath.substr(filePath.find_last_of("/\\") + 1);
+                mImages.push_back(std::make_unique<ImageTile>(filename, filePath));
+            }
+            displayImages();
+        });
+    }
 
+    displayClusters();
+    connect(ui->goBackButton, &QPushButton::clicked, this, &HomepageView::displayClusters);
     connect(ui->Btn_toggle, &QPushButton::clicked, this, &HomepageView::slideOutPanel);
     connect(ui->Save_Button, &QPushButton::clicked, this, &HomepageView::saveLayout);
     connect(ui->New_Session_Button, &QPushButton::clicked, this, &HomepageView::startNewSession);
@@ -95,5 +105,25 @@ void HomepageView::slideOutPanel()
         ui->About_Us_Button->setText("About us");
         ui->Save_Button->setText("Save");
         ui->Exit_Button->setText("Exit");
+    }
+}
+
+void HomepageView::displayImages()
+{
+    ui->flowWidget->clear();
+    ui->goBackFrame->setVisible(true);
+    for(const auto& image : mImages)
+    {
+        ui->flowWidget->addWidget(image.get());
+    }
+}
+
+void HomepageView::displayClusters()
+{
+    ui->flowWidget->clear();
+    ui->goBackFrame->setVisible(false);
+    for(const auto& cluster : mClusters)
+    {
+        ui->flowWidget->addWidget(cluster.get());
     }
 }

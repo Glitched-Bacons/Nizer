@@ -2,15 +2,10 @@
 #define IMAGETILE_H
 
 #include "Tile.h"
-#include "./ui_ImageTile.h"
 
 #include <QWidget>
 
-namespace Ui {
-class ImageTile;
-}
-
-class ImageTile : public QWidget, public Tile
+class ImageTile : public Tile
 {
     Q_OBJECT
 
@@ -22,7 +17,6 @@ public:
     QImage thumbnail() const override;
 
 private:
-    std::unique_ptr<Ui::ImageTile> ui;
     QImage mThumbnail;
     std::string mImagePath;
 };

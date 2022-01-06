@@ -1,13 +1,17 @@
 #include "ImageTile.h"
+#include "ui_Tile.h"
+
+#include <QPixmap>
 
 ImageTile::ImageTile(const std::string& name, const std::string& imagePath,
                      QWidget *parent)
-    : Tile(name)
-    , QWidget(parent)
-    , mThumbnail(":resources/icons/folder-icon.png")
-    , ui(std::make_unique<Ui::ImageTile>())
+    : Tile(name, parent)
+    , mThumbnail(QString(imagePath.c_str()))
 {
-    ui->setupUi(this);
+    mThumbnail = mThumbnail.scaled(100, 100, Qt::KeepAspectRatio);
+    auto&& qpixmap = QPixmap();
+    qpixmap.convertFromImage(mThumbnail);
+    Tile::ui->fileImage->setPixmap(std::move(qpixmap));
 }
 
 std::string ImageTile::imagePath() const

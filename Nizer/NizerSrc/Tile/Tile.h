@@ -2,16 +2,27 @@
 #define TILE_H
 
 #include <QImage>
+#include <qwidget.h>
 #include <string>
 
-class Tile
+namespace Ui {
+class Tile;
+}
+
+class Tile : public QWidget
 {
+    Q_OBJECT
+
 public:
-    virtual ~Tile() = default;
-    Tile(const std::string& name);
+    virtual ~Tile();
+    Tile(const std::string& name, QWidget *parent = nullptr);
 
     std::string name() const;
+    void setOnClickFunction(std::function<void()> func);
     virtual QImage thumbnail() const = 0;
+
+protected:
+    std::unique_ptr<Ui::Tile> ui;
 
 private:
     std::string mName;

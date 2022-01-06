@@ -8,9 +8,6 @@ set(CMAKE_AUTOUIC OFF)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
@@ -62,10 +59,10 @@ set(PROJECT_SOURCES
         Tile/Tile.cpp
         Tile/ClusterTile.h
         Tile/ClusterTile.cpp
-        Tile/ClusterTile.ui
+        #Tile/ClusterTile.ui
         Tile/ImageTile.h
         Tile/ImageTile.cpp
-        Tile/ImageTile.ui
+        #Tile/ImageTile.ui
 )
 
 add_library(NizerSrc SHARED
@@ -102,5 +99,5 @@ else()
     endif()
 endif()
 
-target_link_libraries(NizerApp PRIVATE NizerSrc)
+target_link_libraries(NizerApp PRIVATE stdc++fs NizerSrc)
 
