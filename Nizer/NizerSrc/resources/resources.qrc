@@ -10,6 +10,9 @@
         <file>icons/tab-icon.png</file>
         <file>icons/X-icon.png</file>
         <file>icons/go-back-icon.png</file>
+        <file>icons/annotate-icon.png</file>
+        <file>icons/navigation_expand_more_icon.png</file>
+        <file>icons/navigation-expand_less_icon.png</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/girl-with-cat.png</file>

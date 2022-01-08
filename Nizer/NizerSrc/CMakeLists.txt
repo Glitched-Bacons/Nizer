@@ -39,8 +39,9 @@ set(PROJECT_SOURCES
         View/Misc/FlowLayout.cpp
         View/Misc/FlowWidget.h
         View/Misc/FlowWidget.cpp
-        #View/ImageView.h
-        #View/ImageView.cpp
+        View/ImageView.h
+        View/ImageView.cpp
+        View/ImageView.ui
 
         # Hash algorithm
         #HashAlgorithm/HashAlgorithm.h

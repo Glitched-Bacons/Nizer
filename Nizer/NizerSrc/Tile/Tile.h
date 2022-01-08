@@ -26,6 +26,7 @@ protected:
 
 private:
     std::string mName;
+
 };
 
 #endif // TILE_H

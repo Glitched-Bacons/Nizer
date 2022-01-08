@@ -9,6 +9,7 @@
 #include "ViewStack.h"
 #include <qpropertyanimation.h>
 #include <Tile/ClusterTile.h>
+#include <list>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class HomepageView; }
@@ -36,7 +37,7 @@ private:
 
     std::unique_ptr<Ui::HomepageView> ui;
     std::vector<std::unique_ptr<ClusterTile>> mClusters;
-    std::vector<std::unique_ptr<ImageTile>> mImages;
+    std::list<std::unique_ptr<ImageTile>> mImages;
 };
 
 #endif // HOMEPAGEVIEW_H

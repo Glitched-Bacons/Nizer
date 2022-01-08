@@ -1,6 +1,7 @@
 #include "HomepageView.h"
 #include "ViewStack.h"
 #include "WelcomeView.h"
+#include "ImageView.h"
 #include <QFileDialog>
 #include <QGraphicsDropShadowEffect>
 #include <QMessageBox>
@@ -28,6 +29,11 @@ HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<Clu
             {
                 std::string filename = filePath.substr(filePath.find_last_of("/\\") + 1);
                 mImages.push_back(std::make_unique<ImageTile>(filename, filePath));
+                auto& image = mImages.back();
+                image->setOnClickFunction([this, &image](){
+                    requestPush<ImageView>(*image);
+                    executeRequests();
+                });
             }
             displayImages();
         });
