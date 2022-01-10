@@ -15,6 +15,25 @@ ImageView::ImageView(ViewStack& viewStack, ImageTile& image, QWidget *parent) :
     });
 
     ui->nameOfFile->setText(QString(mImage.name().c_str()));
-    ui->image->setPixmap(QPixmap(mImage.imagePath().c_str()));
     ui->path->setText(("Path:   " + mImage.imagePath()).c_str());
+
+    //Set pixmap
+    ui->image->setPixmap(QPixmap(mImage.imagePath().c_str()));
+    ui->image->setScaledContents(true);
+    ui->image->setFixedSize(0,0);
+    resizeImage();
 }
+
+void ImageView::resizeImage()
+{
+    QSize pixSize = ui->image->pixmap().size();
+    pixSize.scale(ui->imageFrame->size(), Qt::KeepAspectRatio);
+    ui->image->setFixedSize(pixSize);
+}
+
+void ImageView::resizeEvent(QResizeEvent * event) {
+    QWidget::resizeEvent(event);
+    resizeImage();
+}
+
+

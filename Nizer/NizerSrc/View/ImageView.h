@@ -15,6 +15,11 @@ class ImageView : public View
 
 public:
     ImageView(ViewStack& viewStack, ImageTile& image, QWidget *parent = nullptr);
+protected:
+    void resizeEvent(QResizeEvent * event);
+
+private slots:
+    void resizeImage();
 
 private:
     std::unique_ptr<Ui::ImageView> ui;
