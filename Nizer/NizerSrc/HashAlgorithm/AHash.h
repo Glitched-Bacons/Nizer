@@ -6,7 +6,7 @@
 class AHash : public HashAlgorithm
 {
 public:
-    Hash hash(const std::string& imagePath) override;
+    Hash hash(const std::string& imagePath) const override;
 };
 
 #endif // AHASH_H

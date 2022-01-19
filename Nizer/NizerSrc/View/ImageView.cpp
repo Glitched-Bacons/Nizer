@@ -17,7 +17,6 @@ ImageView::ImageView(ViewStack& viewStack, ImageTile& image, QWidget *parent) :
     ui->nameOfFile->setText(QString(mImage.name().c_str()));
     ui->path->setText(("Path:   " + mImage.imagePath()).c_str());
 
-    //Set pixmap
     ui->image->setPixmap(QPixmap(mImage.imagePath().c_str()));
     ui->image->setScaledContents(true);
     ui->image->setFixedSize(0,0);

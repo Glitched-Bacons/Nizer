@@ -1,46 +1,80 @@
 #include "WelcomeView.h"
 #include "HomepageView.h"
+#include <QFileDialog>
 #include <filesystem>
 #include <iostream>
+#include <set>
+#include <HashAlgorithm/AHash.h>
+#include <HashAlgorithm/Hash.h>
+
+
+const std::vector<std::string> WelcomeView::imageExtensions = {
+  ".png", ".jpg", ".jpeg"
+};
 
 std::vector<std::unique_ptr<ClusterTile>> WelcomeView::loadFromFile()
 {
-    // Placeholder
-    //for (std::filesystem::recursive_directory_iterator i("."), end; i != end; ++i)
-      //if (!is_directory(i->path()))
-        //std::cout << i->path().filename() << "\n";
+    return std::vector<std::unique_ptr<ClusterTile>>();
+}
 
-    static const std::vector<std::string> imageExtensions = {
-      ".png", ".jpg", ".jpeg"
-    };
+void WelcomeView::createNewCluster(std::vector<std::unique_ptr<ClusterTile>>& clusters, const Hash& clusterHash, const std::string& initialFilePath)
+{
+    clusters.emplace_back(std::make_unique<ClusterTile>("Cluster " + std::to_string(clusters.size()), clusterHash));
+    clusters.back()->addFilePath(initialFilePath);
+}
 
-    // Just for test purposes
-    auto clusters = std::vector<std::unique_ptr<ClusterTile>>();
-    int counter = 0;
-    int clusterNumber = 0;
-    for (const auto& dirEntry : std::filesystem::recursive_directory_iterator("."))
+ClusterTile& WelcomeView::findClosestCluster(std::vector<std::unique_ptr<ClusterTile>>& clusters, const Hash& hash)
+{
+    auto closestCluster = clusters.front().get();
+    for(auto& cluster : clusters)
     {
-        auto extension = dirEntry.path().extension().string();
+        int hashDifference = hash - cluster->getHash();
+        if(hashDifference < hash - closestCluster->getHash())
+        {
+            closestCluster = cluster.get();
+        }
+    }
+
+    return *closestCluster;
+}
+
+std::vector<std::unique_ptr<ClusterTile>> WelcomeView::loadFromFolder()
+{
+    QFileDialog fileDialog;
+    fileDialog.setFileMode(QFileDialog::Directory);
+    auto folderWithImages = fileDialog.getExistingDirectory(nullptr, "Select folder with images", QDir::currentPath());
+
+    auto clusters = std::vector<std::unique_ptr<ClusterTile>>();
+    for (const auto& directory : std::filesystem::recursive_directory_iterator(folderWithImages.toStdString()))
+    {
+        auto extension = directory.path().extension().string();
         if(std::find(imageExtensions.cbegin(), imageExtensions.cend(), extension) != imageExtensions.cend())
         {
-            if(counter == 0)
-            {
-                clusters.emplace_back(std::make_unique<ClusterTile>("cluster " + std::to_string(clusterNumber++)));
-            }
-            auto& back = clusters.back();
-            back->addFilePath(dirEntry.path().string());
+            auto imagePath = directory.path().string();
+            auto imageHash = mHashAlgorithm->hash(imagePath);
 
-            counter += 1;
-            counter %= 4;
+            if(clusters.empty())
+            {
+                createNewCluster(clusters, imageHash, imagePath);
+            }
+            else
+            {
+                auto& closestCluster = findClosestCluster(clusters, imageHash);
+
+                int hashDifference = imageHash - closestCluster.getHash();
+                if(hashDifference < hashThreshold)
+                {
+                    closestCluster.addFilePath(imagePath);
+                }
+                else
+                {
+                    createNewCluster(clusters, imageHash, imagePath);
+                }
+            }
         }
     }
 
     return clusters;
-}
-
-std::vector<ClusterTile> WelcomeView::loadFromFolder()
-{
-    return std::vector<ClusterTile>();
 }
 
 void WelcomeView::selectAlgorithmClick()
@@ -54,16 +88,15 @@ void WelcomeView::threeDotsButtonClicked()
 }
 
 
-WelcomeView::WelcomeView(ViewStack& viewStack)
+WelcomeView::WelcomeView(ViewStack& viewStack, std::unique_ptr<HashAlgorithm> hashAlgorithm)
     : View(viewStack)
     , ui(std::make_unique<Ui::WelcomeView>())
+    , mHashAlgorithm(std::move(hashAlgorithm))
 {
     ui->setupUi(this);
     viewStack.setWindowSize(sizeHint());
 
     ui->button_select_algorithm->setHidden(true);
-
-    loadedFiles = loadFromFile();
 
     connect(ui->button_threedots, &QPushButton::clicked, this, [this](){
         auto newState = !ui->button_select_algorithm->isHidden();
@@ -71,7 +104,8 @@ WelcomeView::WelcomeView(ViewStack& viewStack)
     });
 
     connect(ui->button_select_folder, &QPushButton::clicked, this, [this](){
-        requestPush<HomepageView>(std::move(loadedFiles));
+        auto&& loadedData = loadFromFolder();
+        requestPush<HomepageView>(std::move(loadedData));
         executeRequests();
     });
 

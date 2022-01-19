@@ -44,16 +44,16 @@ set(PROJECT_SOURCES
         View/ImageView.ui
 
         # Hash algorithm
-        #HashAlgorithm/HashAlgorithm.h
-        #HashAlgorithm/HashAlgorithm.cpp
+        HashAlgorithm/HashAlgorithm.h
+        HashAlgorithm/HashAlgorithm.cpp
         #HashAlgorithm/PHash.h
         #HashAlgorithm/PHash.cpp
         #HashAlgorithm/DHash.h
         #HashAlgorithm/DHash.cpp
-        #HashAlgorithm/AHash.h
-        #HashAlgorithm/AHash.cpp
-        #HashAlgorithm/Hash.h
-        #HashAlgorithm/Hash.cpp
+        HashAlgorithm/AHash.h
+        HashAlgorithm/AHash.cpp
+        HashAlgorithm/Hash.h
+        HashAlgorithm/Hash.cpp
 
         # Tiles
         Tile/Tile.h

@@ -163,7 +163,7 @@ background-color: rgb(33, 33, 33);
             <enum>QFrame::NoFrame</enum>
            </property>
            <property name="text">
-            <string>Caption</string>
+            <string/>
            </property>
            <property name="indent">
             <number>5</number>
@@ -511,6 +511,13 @@ background-color: rgb(33, 33, 33);
               <property name="autoFillBackground">
                <bool>false</bool>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton:pressed
+{
+	border: 0px;
+}
+</string>
+              </property>
               <property name="text">
                <string/>
               </property>
@@ -597,6 +604,13 @@ p, li { white-space: pre-wrap; }
              <width>55</width>
              <height>55</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:pressed
+{
+	border: 0px;
+}
+</string>
            </property>
            <property name="text">
             <string/>

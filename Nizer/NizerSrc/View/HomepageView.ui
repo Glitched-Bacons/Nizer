@@ -384,7 +384,7 @@ QPushButton:hover
 </string>
                 </property>
                 <property name="text">
-                 <string/>
+                 <string notr="true"/>
                 </property>
                 <property name="icon">
                  <iconset resource="../resources/resources.qrc">
@@ -516,6 +516,13 @@ QPushButton:hover
             <widget class="QPushButton" name="goBackButton">
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton:pressed
+{
+	border: 0px;
+}
+</string>
              </property>
              <property name="text">
               <string/>

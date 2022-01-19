@@ -188,9 +188,7 @@
           </property>
           <property name="font">
            <font>
-            <family>Segoe UI Semibold</family>
             <pointsize>18</pointsize>
-            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
@@ -212,10 +210,9 @@
           </property>
           <property name="font">
            <font>
-            <family>Segoe UI Semibold</family>
+            <family>Segoe UI</family>
             <pointsize>10</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <bold>false</bold>
            </font>
           </property>
           <property name="styleSheet">
@@ -233,16 +230,15 @@
            <rect>
             <x>10</x>
             <y>200</y>
-            <width>111</width>
+            <width>131</width>
             <height>31</height>
            </rect>
           </property>
           <property name="font">
            <font>
-            <family>Segoe UI Semibold</family>
+            <family>Segoe UI</family>
             <pointsize>10</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <bold>false</bold>
            </font>
           </property>
           <property name="cursor">
@@ -262,7 +258,7 @@
 }</string>
           </property>
           <property name="text">
-           <string>Go to homepage</string>
+           <string>Load from folder</string>
           </property>
          </widget>
          <widget class="QPushButton" name="button_load_saved_data">
@@ -276,10 +272,9 @@
           </property>
           <property name="font">
            <font>
-            <family>Segoe UI Semibold</family>
+            <family>Segoe UI</family>
             <pointsize>10</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <bold>false</bold>
            </font>
           </property>
           <property name="cursor">
@@ -299,7 +294,7 @@
 }</string>
           </property>
           <property name="text">
-           <string>Pop</string>
+           <string>Load from file</string>
           </property>
          </widget>
          <widget class="QPushButton" name="button_threedots">
@@ -366,10 +361,9 @@
           </property>
           <property name="font">
            <font>
-            <family>Segoe UI Semibold</family>
+            <family>Segoe UI</family>
             <pointsize>9</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <bold>false</bold>
            </font>
           </property>
           <property name="cursor">
@@ -383,6 +377,26 @@ color: rgb(177, 177, 177);</string>
           </property>
           <property name="text">
            <string>Change way of grouping</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="unavailable">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;
+background-color: rgba(0, 0, 0, 180);</string>
+          </property>
+          <property name="text">
+           <string>Temporarily unavailable</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </widget>

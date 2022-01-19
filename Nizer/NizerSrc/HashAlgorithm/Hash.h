@@ -6,8 +6,10 @@ class HashAlgorithm;
 class Hash
 {
 public:
-    bool operator==(const HashAlgorithm& rhs);
-    int operator-(const HashAlgorithm& rhs);
+    Hash(int hashValue);
+
+    bool operator==(const Hash& rhs) const;
+    int operator-(const Hash& rhs) const;
 
 private:
     int mHash;

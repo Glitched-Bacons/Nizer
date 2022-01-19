@@ -64,7 +64,6 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>48</pointsize>
      </font>
     </property>
@@ -99,20 +98,27 @@ Us</string>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>20</pointsize>
-      <weight>50</weight>
       <bold>false</bold>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(218, 218, 218);</string>
+     <string notr="true">QPushButton{
+color: rgb(218, 218, 218);
+}
+
+QPushButton:pressed {
+        border: 0px;
+   }</string>
     </property>
     <property name="text">
      <string>X</string>
@@ -138,7 +144,6 @@ Us</string>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>11</pointsize>
      </font>
     </property>
@@ -167,7 +172,6 @@ Julia Boczkowska - github.com/JuliaBoczkowska</string>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
       <pointsize>11</pointsize>
      </font>
     </property>

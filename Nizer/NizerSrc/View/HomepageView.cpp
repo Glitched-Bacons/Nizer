@@ -50,10 +50,16 @@ HomepageView::HomepageView(ViewStack& viewStack, std::vector<std::unique_ptr<Clu
 
 void HomepageView::saveLayout()
 {
-    auto fileName = QFileDialog::getSaveFileName(this, "Save your session", QString(), "Nizer Files (*.nizer)");
-    std::ofstream outputFile(fileName.toStdString());
-    outputFile << "To be implemented" << std::endl;
-    outputFile.close();
+    QMessageBox msgBox(this);
+    msgBox.setStyleSheet("color: white;");
+    msgBox.setWindowTitle("Oops, not implemented!");
+    msgBox.setText("Sorry, this feature is not yet implemented");
+    msgBox.setWindowIcon(QIcon(":/icons/icons/bacon-icon.png"));
+
+    QPixmap&& pixmap = QPixmap();
+    pixmap.convertFromImage(QImage(":/images/images/bacon.png").scaled(100, 100, Qt::AspectRatioMode::KeepAspectRatio));
+    msgBox.setIconPixmap(std::move(pixmap));
+    msgBox.exec();
 }
 
 void HomepageView::displayAboutUs()
@@ -84,6 +90,7 @@ void HomepageView::exitApplication()
 
 void HomepageView::slideOutPanel()
 {
+    //TODO: This whole function should be changed
     static auto minimumWidth = ui->frame_left_menu->minimumWidth();
     static auto maximumWidth = ui->frame_left_menu->maximumWidth();
     auto resizeDown = ui->frame_left_menu->minimumWidth() == maximumWidth;

@@ -8,8 +8,8 @@ class Hash;
 class HashAlgorithm
 {
 public:
-    virtual ~HashAlgorithm() = 0;
-    virtual Hash hash(const std::string& imagePath) = 0;
+    virtual ~HashAlgorithm() = default;
+    virtual Hash hash(const std::string& imagePath) const = 0;
 };
 
 #endif // HASHALGORITHM_H
