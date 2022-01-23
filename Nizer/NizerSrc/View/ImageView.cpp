@@ -1,5 +1,7 @@
 #include "ImageView.h"
 #include <iostream>
+#include <filesystem>
+#include <algorithm>
 
 ImageView::ImageView(ViewStack& viewStack, ImageTile& image, QWidget *parent) :
     View(viewStack, parent),
@@ -14,8 +16,16 @@ ImageView::ImageView(ViewStack& viewStack, ImageTile& image, QWidget *parent) :
         executeRequests();
     });
 
+    connect(ui->addAnnotationButton, &QPushButton::clicked, this, &ImageView::annotateButtonClick);
+    connect(ui->annotationTextField, &QTextEdit::textChanged, this, [this](){
+        ui->imageCaption->setText(ui->annotationTextField->toPlainText());
+    });
+
     ui->nameOfFile->setText(QString(mImage.name().c_str()));
-    ui->path->setText(("Path:   " + mImage.imagePath()).c_str());
+    ui->path->setText(("Path: " + mImage.imagePath()).c_str());
+    //ui->similarity->setText("Similarity: ");
+    auto fileSizeString = std::to_string(std::filesystem::file_size(mImage.imagePath()));
+    ui->size->setText(("Size: " + fileSizeString + " bytes").c_str());
 
     ui->image->setPixmap(QPixmap(mImage.imagePath().c_str()));
     ui->image->setScaledContents(true);
@@ -33,6 +43,12 @@ void ImageView::resizeImage()
 void ImageView::resizeEvent(QResizeEvent * event) {
     QWidget::resizeEvent(event);
     resizeImage();
+}
+
+void ImageView::annotateButtonClick()
+{
+    auto&& isAnnotationFieldVisible = ui->annotationTextField->isVisible();
+    ui->annotationTextField->setVisible(!isAnnotationFieldVisible);
 }
 
 

@@ -39,6 +39,7 @@ private:
     std::vector<std::unique_ptr<ClusterTile>> loadedFiles;
     std::unique_ptr<HashAlgorithm> mHashAlgorithm;
     static const std::vector<std::string> imageExtensions;
+    static inline const int hashThreshold = 5;
 };
 
 #endif // WELCOMEVIEW_H

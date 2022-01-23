@@ -18,6 +18,9 @@ public:
 protected:
     void resizeEvent(QResizeEvent * event);
 
+private:
+    void annotateButtonClick();
+
 private slots:
     void resizeImage();
 
